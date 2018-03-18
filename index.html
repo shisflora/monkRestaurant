@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Unit 9 -- Restaurant</title>
+
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<!--Header div-->
+		<div class="inner">
+			<h1>Monk's Cafe</h1>
+			<h4>"The Coffee Shop"</h4>
+			<img id="banner" src="images/toms-restaurant.jpg"/>
+		</div>
+
+		<!--Reservations div-->
+		<div class="inner">
+			<h2>Reservations</h2>
+			<div id="reserveLeft">
+				<h3>Make a Reservation</h3>
+
+				<!--reservation form-->
+				<form>
+					<label for="reserveName">Name: </label>
+				    <input type="text" id="reserveName" placeholder="Enter your name"/><br>
+
+				    <label for="reserveDay">Day: </label>
+				    <input type="text" id="reserveDay" placeholder="Enter a day"/><br>
+				    
+				    <button class="reserveButton">Confirm Reservation</button>
+				</form>
+			</div>
+
+			<div id="reserveRight">
+				<h3>Existing Reservations</h3>
+				<table>
+					<tr>
+						<th>Name</th>
+						<th>Day</th>
+					</tr>
+					<tr>
+						<td>Name A</td>
+						<td>Day A</td>
+					</tr>
+					<tr>
+						<td>Name B</td>
+						<td>Day B</td>
+					</tr>
+				</table>
+
+			</div>
+		</div>
+
+
+		<!--Come-dine-with-us div-->
+		<div class="inner">
+			<h2>Come Dine with Us</h2>
+			<div id = "map"></div>
+		</div>
+
+
+		<!--Reviews div-->
+		<div class="inner">
+			<h2>Customer Reviews</h2>
+			<table class="reviewTable">
+				<td>
+					<img id="customer" src="images/jerry.jpg"/>
+				</td>
+				<td>
+					<p class = "review">
+						“Big lettuce, big carrots, tomatoes like volleyballs.”<br/>
+						— Jerry Seinfeld, on The BIG Salad
+					</p>
+				</td>
+			</table>
+		</div>
+	</div> <!--close container div -->
+
+
+
+
+	<!--script tags-->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<!--Google Maps API scipt-->
+	  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApAN9UdXMStQotzeUD2sehnsjy5SmDB78&callback=initMap"
+  type="text/javascript"></script>
+
+  
+
+
+</body>
+</html>
